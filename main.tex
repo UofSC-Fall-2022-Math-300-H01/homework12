@@ -1,0 +1,65 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{ebproof}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{caution}[theorem]{Caution}
+
+\begin{document}
+
+\title{Homework}
+
+\maketitle
+
+\begin{enumerate}
+	\item Provide a proof of the following result. 
+
+	\begin{lemma*}
+		Containment is a partial order on sets. In other words, 
+		\begin{itemize}
+			\item For any set $X$, we have $X \subseteq X$. 
+			\item For any sets $X, Y$, if $X \subseteq Y$ and 
+				$Y \subseteq X$, we have $X = Y$. 
+			\item For any sets $X, Y, Z$, if $X \subseteq Y$ 
+				and $Y \subseteq Z$, then $X \subseteq Z$.
+		\end{itemize}
+	\end{lemma*}
+	
+	\item Let $f : X \to X$ be a function and let $\sim$ be the relation 
+	given by the graph $\Gamma_f \subseteq X \times X$. In other 
+	words, $x \sim y$ if and only if $y = f(x)$. 
+	\begin{itemize}
+		\item Show that if $\sim$ is reflexive, then $f = \operatorname{id}_X$. 
+		\item Show that if $\sim$ is symmetric, then $f$ is an 
+			\textbf{involution}, $f^2(x) = x$ for all $x$. 
+		\item Show that if $\sim$ is transitive, then $f$ is \textbf{idempotent}, 
+			$f^2(x) = f(x)$ for all $x$.
+	\end{itemize}
+		
+
+
+		
+\end{enumerate}
+\end{document}
