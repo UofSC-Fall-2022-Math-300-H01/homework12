@@ -5,8 +5,8 @@ ARG VARIANT="buster"
 FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
 # ** [Optional] Uncomment this section to install additional packages. **
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends texlive-full latexmk 
-
+# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+#     && apt-get -y install --no-install-recommends texlive-full latexmk 
+#
 # RUN curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- --default-toolchain leanprover/lean4:stable --no-modify-path -y
 # ENV PATH="$HOME/.elan/bin:${PATH}"
