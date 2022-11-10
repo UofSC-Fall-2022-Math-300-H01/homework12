@@ -24,7 +24,10 @@
 				"James-Yu.latex-workshop"
 			]
 		}
-	}
+	},
+
+	"postCreateCommand": "curl https:\/\/raw.githubusercontent.com\/leanprover\/elan\/master\/elan-init.sh -sSf | sh -s -- --default-toolchain none --no-modify-path -y"
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
