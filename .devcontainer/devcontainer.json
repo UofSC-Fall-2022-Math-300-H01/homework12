@@ -29,7 +29,7 @@
 	"postCreateCommand": "curl https:\/\/raw.githubusercontent.com\/leanprover\/elan\/master\/elan-init.sh -sSf | sh -s -- --default-toolchain none --no-modify-path -y",
 
 	"remoteEnv": {
-		"PATH": "${containerEnv:PATH}:/home/vscode/.elan/bin"}
+		"PATH": "${containerEnv:PATH}:/home/vscode/.elan/bin"
 	}
 
 
