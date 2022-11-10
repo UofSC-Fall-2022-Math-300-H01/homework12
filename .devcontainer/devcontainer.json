@@ -26,7 +26,12 @@
 		}
 	},
 
-	"postCreateCommand": "curl https:\/\/raw.githubusercontent.com\/leanprover\/elan\/master\/elan-init.sh -sSf | sh -s -- --default-toolchain none --no-modify-path -y && export PATH='/home/vscode/.elan/bin:${PATH}'"
+	"postCreateCommand": "curl https:\/\/raw.githubusercontent.com\/leanprover\/elan\/master\/elan-init.sh -sSf | sh -s -- --default-toolchain none --no-modify-path -y",
+
+	"remoteEnv": {
+		"PATH": "${containerEnv:PATH}:/home/vscode/.elan/bin"}
+	}
+
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
