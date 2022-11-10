@@ -34,32 +34,32 @@
 \maketitle
 
 \begin{enumerate}
-	\item Provide a proof of the following result. 
-
-	\begin{lemma*}
-		Containment is a partial order on sets. In other words, 
-		\begin{itemize}
-			\item For any set $X$, we have $X \subseteq X$. 
-			\item For any sets $X, Y$, if $X \subseteq Y$ and 
-				$Y \subseteq X$, we have $X = Y$. 
-			\item For any sets $X, Y, Z$, if $X \subseteq Y$ 
-				and $Y \subseteq Z$, then $X \subseteq Z$.
-		\end{itemize}
-	\end{lemma*}
-	
-	\item Let $f : X \to X$ be a function and let $\sim$ be the relation 
-	given by the graph $\Gamma_f \subseteq X \times X$. In other 
-	words, $x \sim y$ if and only if $y = f(x)$. 
-	\begin{itemize}
-		\item Show that if $\sim$ is reflexive, then $f = \operatorname{id}_X$. 
-		\item Show that if $\sim$ is symmetric, then $f$ is an 
-			\textbf{involution}, $f^2(x) = x$ for all $x$. 
-		\item Show that if $\sim$ is transitive, then $f$ is \textbf{idempotent}, 
-			$f^2(x) = f(x)$ for all $x$.
-	\end{itemize}
-		
-
-
-		
+	\item Prove that 
+	\begin{displaymath}
+		\frac{d^n}{dx^n} (xe^x) = (n+x)e^x
+	\end{displaymath}
+		for all $n \in \mathbb{N}$.
+	\item Let $a,r \in \mathbb{R}$ with $r \neq 1$. Prove that 
+	\begin{displaymath}
+		\sum_{k=0}^n a r^k = \frac{a(1-r^{n+1})}{1-r}
+	\end{displaymath}
+		for all $n \in \mathbb{N}$. 
+	\item Let $f : X \to X$ be a function. Prove 
+		that for any $m \in \mathbb{N}$ and any $n \geq m$ 
+		that 
+	\begin{displaymath}
+		f^n(X) \subseteq f^m(X) 
+	\end{displaymath}
+	\item Prove the following formula for binomial coefficients: 
+		If $n \geq k$, 
+	\begin{displaymath}
+		\binom{n}{k} = \frac{n!}{k!(n-k)!} 
+	\end{displaymath}
+	% \item Let $m \in \mathbb{N}$. Prove that, for any $n \in 
+	% 	\mathbb{N}$, there exists $q,r \in \mathbb{N}$ with 
+	% \begin{displaymath}
+	% 	n = qm + r 
+	% \end{displaymath}
+	% with $0 \leq r < m$. 
 \end{enumerate}
 \end{document}
